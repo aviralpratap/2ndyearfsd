@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0d9ca1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    margin-bottom:8px;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+}
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.card{
+    width:220px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    color:#8ba10d;
+    font-size:35px;
+}
+
+.form-container{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom:25px;
+}
+
+.form-container h2{
+    margin-bottom:15px;
+    color:#0d47a1;
+}
+
+#studentForm{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+#studentForm input,
+#studentForm select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+#studentForm button{
+    background:#0d47a1;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+#studentForm button:hover{
+    background:#1565c0;
+}
+
+.filter{
+    margin-bottom:20px;
+}
+
+.filter label{
+    margin-right:10px;
+    font-size:17px;
+}
+
+.filter select{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+th{
+    background:#0d47a1;
+    color:white;
+}
+
+th,
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f1f7ff;
+}
+
+.delete-btn{
+    background:#e53935;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+    background:#c62828;
+}
+
+#noRecord{
+    text-align:center;
+    font-size:20px;
+    color:red;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    table{
+        font-size:14px;
+    }
+
+    th,
+    td{
+        padding:10px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}
