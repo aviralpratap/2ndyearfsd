@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <link rel="stylesheet" href="keyboardevents.css">
+
+</head>
+<body>
+    <div id="form">
+        <h1 id="heading">Keyboard Events</h1>
+        <p>Onekeydown event triggered!</p>
+        <input type="text" onkeydown="document.getElementById('form').style.backgroundColor = 'lightblue'">
+        <p>Onekeyup event triggered!</p>
+        <input type="text" onkeyup="document.getElementById('form').style.backgroundColor = 'lightgray'">
+        <p>Onekeypress event triggered!</p>
+        <input type="text" onkeypress="document.getElementById('form').style.backgroundColor = 'lightgreen'">
+    </div>
+</body>
+</html>
